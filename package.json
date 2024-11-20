@@ -1,0 +1,15 @@
+{
+  "name": "c1-cdn-cache-poc",
+  "version": "1.0.0",
+  "description": "POC to test CDN cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Sneha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
