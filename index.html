@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORS POC</title>
-    <link rel="stylesheet" href="https://asgard-thor-assets.comprodls.com/onboarding/1732096688253/_nuxt/Header.4Aw7RseO.css">
+    <link rel="prefetch" href="https://qa-assets.cambridgeone.org/onboarding/1732083791571/_nuxt/Footer.iUfQqpkb.css">
+
+    <title>CORS POC</title>    
 </head>
 <body>
 
     <p>This page loads CSS with CORS</p>
 
-    <script>
+    <!-- <script>
         // Function to load CSS dynamically using XMLHttpRequest
         function loadCSSWithXHR(url) {
             var xhr = new XMLHttpRequest();
@@ -31,6 +32,15 @@
 
         // Load CSS files in order
         loadCSSWithXHR('https://asgard-thor-assets.comprodls.com/onboarding/1732096688253/_nuxt/Header.4Aw7RseO.css');
+    </script> -->
+    <script>
+        setTimeout(() => {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://qa-assets.cambridgeone.org/onboarding/1732083791571/_nuxt/Footer.iUfQqpkb.css'; // Path to your CSS file
+            document.head.appendChild(link);
+        }, 1000); // Delay of 3 seconds
     </script>
+    <link rel="stylesheet" href="https://qa-assets.cambridgeone.org/onboarding/1732083791571/_nuxt/Footer.iUfQqpkb.css">
 </body>
 </html>
